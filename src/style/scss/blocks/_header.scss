@@ -78,6 +78,7 @@
     &__nav-list {
         @include breakpoint('md') {
             flex-direction: column;
+            padding-top: 80px;
         }
     }
 

@@ -4,30 +4,23 @@
   .container {
     background-image: url(../../../src/img/hero-img.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     position: relative;
-    max-height: 530px;
-    height: 100%;
     padding: 159px 0 172px;
   }
 
   &__pre-title {
     display: block;
     text-align: center;
+    padding: 0 10px;
     margin-bottom: 10px;
-
-    & span {
-      color: $white;
-      font-family: inherit;
-      font-weight: 400;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+    @include capslock-text;
+    color: $white;
   }
 
   &__title {
     text-align: center;
+    padding: 0 10px;
     margin-bottom: 10px;
     color: $white;
 
@@ -40,6 +33,7 @@
 
   &__text {
     text-align: center;
+    padding: 0 10px;
     margin-bottom: 38px;
 
     & span {
@@ -53,9 +47,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  &__button {
-    display: block;
   }
 }

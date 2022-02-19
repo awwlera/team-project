@@ -65,6 +65,7 @@ img {
 }
 
 .btn {
+  display: block;
   @include capslock-text;
   padding: 8px 24px;
   background-color: $white;

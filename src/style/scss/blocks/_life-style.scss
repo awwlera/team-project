@@ -1,6 +1,10 @@
 .life-style {
     padding: 0 0 189px;
 
+    @include breakpoint("md") {
+        padding: 0 0 100px;
+    }
+
     .section-title {
         margin: 0 auto 102px;
         text-align: center;        
@@ -12,6 +16,11 @@
 
     &__card-holder {
         width: 32%;
+
+        @include breakpoint('md') {
+            width: 48%;
+            margin-bottom: 40px;
+        }
     }
     
     &__img {

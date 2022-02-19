@@ -3,6 +3,10 @@
 
   .flex-container {
     align-items: flex-start;
+
+    @include breakpoint('lg') {
+      justify-content: space-around;
+    }
   }
 
   &__title-holder {
@@ -12,6 +16,7 @@
 
   &__image-holder {
     display: flex;
+    margin-right: 20px;
   }
 
   &__img {
@@ -20,6 +25,10 @@
 
   &__photo {
     padding: 0 0 0 20px;
+
+    @include breakpoint('lg') {
+      padding: 0 0 0 10px;
+    }
   }
 
   &__content {

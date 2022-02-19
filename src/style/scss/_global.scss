@@ -67,15 +67,24 @@ img {
 .btn {
   display: block;
   @include capslock-text;
-  padding: 8px 24px;
+  padding: 5px 24px;
   background-color: $white;
   color: $black;
   border: none;
   outline: none;
+  cursor: pointer;
+
+  &:hover {
+    outline:2px solid $white;
+  }
 
   &_black {
     background-color: $black;
     color: $white;
+
+    &:hover {
+      outline:2px solid $black;
+    }
   }
 }
 
@@ -86,10 +95,24 @@ img {
   &_old {
     color: $black-opacity04;
     text-decoration: line-through;
+    margin: 0 5px;
   }
 
   &_new {
     font-size: 20px;
     color: $red;
+    margin: 0 5px;
+  }
+}
+
+.line {
+  display: inline-block;
+  margin: 0 15px 5px;
+  width: 30px;
+  height: 1px;
+  background-color: #ECECED;
+
+  &_opacity {
+    background: rgba(210, 210, 213, 0.1);
   }
 }

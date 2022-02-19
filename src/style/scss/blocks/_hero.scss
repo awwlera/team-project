@@ -1,5 +1,10 @@
 .hero {
   background-color: #050827;
+  margin: 0 30px 0;
+
+  @include breakpoint('md') {
+    margin: 0 20px 0;
+  }
 
   .container {
     background-image: url(../../../src/img/hero-img.jpg);
@@ -7,6 +12,10 @@
     background-position: bottom;
     position: relative;
     padding: 159px 0 172px;
+
+    @include breakpoint('md') {
+      padding: 100px 0 120px;
+    }
   }
 
   &__pre-title {
@@ -47,5 +56,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  &__button {
+    font-weight: 700;
   }
 }

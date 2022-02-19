@@ -1,42 +1,44 @@
-*, 
+*,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: karla,sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: $black 
+  margin: 0;
+  padding: 0;
+  font-family: karla, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $black;
 }
 
 h1, h2 {
     margin: 0;
 }
 
-ol, ul {
-    margin: 0;
-    padding: 0;
-	list-style: none;
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .container {
-    max-width: 940px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .flex-container {
@@ -47,42 +49,41 @@ img {
 }
 
 .logo {
-
-    &__img {
-        max-width: 112px;
-    }
+  &__img {
+    max-width: 112px;
+  }
 }
 
 .section-title {
-    @include capslock-text;
-    color: $black;
+  @include capslock-text;
+  color: $black;
 }
 
 .btn {
-    @include capslock-text;
-    padding: 8px 24px;
-    background-color: $white;
-    color: $black;
-    border: none;
-    outline: none;
+  @include capslock-text;
+  padding: 8px 24px;
+  background-color: $white;
+  color: $black;
+  border: none;
+  outline: none;
 
-    &_black {
-        background-color: $black;
-        color: $white;
-    }
+  &_black {
+    background-color: $black;
+    color: $white;
+  }
 }
 
 .price {
-    color: $black-opacity07;
-    text-align: center;
+  color: $black-opacity07;
+  text-align: center;
 
-    &_old {
-        color: $black-opacity04;
-        text-decoration: line-through;
-    }
+  &_old {
+    color: $black-opacity04;
+    text-decoration: line-through;
+  }
 
-    &_new {
-        font-size: 20px;
-        color: $red;
-    }
+  &_new {
+    font-size: 20px;
+    color: $red;
+  }
 }

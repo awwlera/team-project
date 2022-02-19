@@ -14,9 +14,13 @@ body {
   color: $black;
 }
 
+main {
+  padding-top: 80px;
+}
+
 h1, h2 {
-    margin: 0;
-    font-weight: 400;
+  margin: 0;
+  font-weight: 400;
 }
 
 ol,
@@ -39,14 +43,14 @@ img {
   max-width: 940px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {

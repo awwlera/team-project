@@ -7,33 +7,31 @@
     &__pseudo-title {
        @include capslock-text;
         color: $white;
-        margin-bottom: 15px;
-
-        &::after {
-            content: "";
-            width: 30px;
-            color:  rgba(210, 210, 213, 0.1) ;
-            border-radius: 0px;            
-            padding-left: 15px;
-            transform: rotare (20deg);
-        }        
+        margin-bottom: 15px;       
     }
 
     &__title {
         color: $white;
         font-size: 36px;
         line-height: 50px;
-        font-weight: 400;      
+        font-weight: 400; 
+        margin-bottom: 25px;     
     }
 
     &__form {
         width: 100%;
     }
 
+    .flex-container {
+        justify-content: center;
+        align-items: center;
+    }
+
     &__input {
         width: 350px;
         height: 54px;
         padding: 18px;
+        margin-right: 10px;
         border: 1px solid #2F303E;
         background-color: $black;
         color: $white;
@@ -54,6 +52,5 @@
         line-height: 18px;
         color: #000;
         @include capslock-text;
-
     }
 }

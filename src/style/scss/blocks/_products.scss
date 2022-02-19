@@ -5,6 +5,12 @@
     padding: 0 0 20px;
   }
 
+  .flex-container {
+    @include breakpoint('xs') {
+      justify-content: center;  
+    }
+  }
+
   &__title-holder {
     text-align: center;
     padding: 0 0 100px;
@@ -20,6 +26,11 @@
 
     @include breakpoint('sm') {
       width: 49%;
+    }
+
+    @include breakpoint('xs') {
+      width: 80%;
+      margin-bottom: 30px;
     }
   }
 

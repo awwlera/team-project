@@ -12,6 +12,10 @@
 
     .flex-container {
         align-items: flex-start;
+
+        @include breakpoint('xs') {
+            justify-content: center;
+        }
     }
 
     &__card-holder {
@@ -20,6 +24,10 @@
         @include breakpoint('md') {
             width: 48%;
             margin-bottom: 40px;
+        } 
+        
+        @include breakpoint('xs') {
+            width: 80%;
         }
     }
     
@@ -43,7 +51,5 @@
     &__date {
         @include capslock-text;
     }
-
-    
 }
 

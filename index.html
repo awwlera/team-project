@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeStyle.</title>
     <link rel="stylesheet" href="src/style/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous">
+    </script>
+    <script src="src/style/js/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -15,31 +20,39 @@
                     <img src="src/img/logo.svg" alt="coffee style logo" class="logo__img">
                 </a>
             </div>
-            <nav class="header__nav">
-                <ul class="header__nav-list flex-container">
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Home</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Our Products</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Blog</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">About</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Contact</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Styleguide</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__shopping-cart">
-                <a href="#" class="header__shopping-link icon-shopping-bag">Cart</a>
+            <div class="header__nav-holder flex-container">
+                <nav class="header__nav">
+                    <ul class="header__nav-list flex-container">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Our Products</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Blog</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Contact</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Styleguide</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__shopping-cart">
+                    <a href="#" class="header__shopping-link">
+                        <img src="src/img/cart.png" alt="shopping cart" class="header__shopping-img">
+                        <span class="header__link-name">Cart</span>
+                    </a>
+                </div>
             </div>
+            <button class="burger-menu">
+                <span></span>
+            </button>
         </div>
     </header>    
 </body>

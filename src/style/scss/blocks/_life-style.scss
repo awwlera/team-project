@@ -1,36 +1,27 @@
 .life-style {
-    padding: 0 0 48px;
-    margin-bottom: 140px;
+    padding: 0 0 189px;
 
     .section-title {
         margin: 0 auto 102px;
         text-align: center;        
     }
 
+    .flex-container {
+        align-items: flex-start;
+    }
+
     &__card-holder {
-        width: calc(100% / 3);
-        padding: 0 20px 48px 10px;
-        margin-right: -20px;
-
-        @include breakpoint ("md") {
-            width: 50%;
-        }
-
-        @include breakpoint ("xxs") {
-            width: 100%;
-        }
+        width: 32%;
     }
     
     &__img {
         margin-bottom: 29px;
     }
 
-
     &__title {
         font-size: 20px;
         line-height: 32px;
         margin-bottom: 10px;
-        font-weight: 400;
         font-size: 20px;
         line-height: 32px;
     }

@@ -98,7 +98,7 @@
         }
     }
 
-    &__link-name {
+    &__nav-link_hidden {
         @include breakpoint('md') {
             visibility: hidden;
         }

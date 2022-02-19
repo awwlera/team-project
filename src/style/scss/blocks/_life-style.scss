@@ -1,0 +1,49 @@
+.life-style {
+    padding: 0 0 48px;
+    margin-bottom: 140px;
+
+    .section-title {
+        margin: 0 auto 102px;
+        text-align: center;        
+    }
+
+    &__card-holder {
+        width: calc(100% / 3);
+        padding: 0 20px 48px 10px;
+        margin-right: -20px;
+
+        @include breakpoint ("md") {
+            width: 50%;
+        }
+
+        @include breakpoint ("xxs") {
+            width: 100%;
+        }
+    }
+    
+    &__img {
+        margin-bottom: 29px;
+    }
+
+
+    &__title {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    &__text {
+        color: $black-opacity07;
+        margin-bottom: 16px;
+    }
+
+    &__date {
+        @include capslock-text;
+    }
+
+    
+}
+

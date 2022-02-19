@@ -1,0 +1,39 @@
+.offer{
+
+  &__title-holder{
+    text-align: center;
+    padding: 35px 0 100px;
+  }
+
+  &__image-holder{
+    display: flex;
+  }
+
+  &__img{
+    padding: 0 0 20px;
+  }
+
+  &__photo{
+    padding: 0 0 0 20px;
+  }
+
+  &__content{
+    max-width: 353px;
+    padding: 10px 0 0;
+  }
+
+  &__title{
+    font-size: 36px;
+    line-height: 50px;
+    padding: 15px 0 15px;
+  }
+
+  &__text{
+    line-height: 28px;
+    opacity: 0.7;
+  }
+
+  &__button-holder{
+    padding: 15px 0 0;
+  }
+}

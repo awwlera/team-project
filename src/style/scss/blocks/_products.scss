@@ -1,14 +1,28 @@
-.products{
+.products {
+  padding: 0 0 100px;
 
-  &__title-holder{
+  &__title-holder {
     text-align: center;
-    padding: 35px 0 100px;
+    padding: 0 0 100px;
   }
 
-  &__heading{
+  &__column {
+    width: 32%;
+    margin-bottom: 65px;
+  }
+
+  &__image-holder {
+    padding: 0 0 35px;
+  }
+
+  &__column-text {
+    text-align: center;
+  }
+
+  &__heading {
     font-size: 20px;
-    color: $dark-blue;
+    color: $black;
     display: block;
-    padding: 0 0 5px;
+    padding: 0 0 8px;
   }
 }

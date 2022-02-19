@@ -14,8 +14,9 @@ body {
     color: $black 
 }
 
-h1 {
+h1, h2 {
     margin: 0;
+    font-weight: 400;
 }
 
 ol, ul {

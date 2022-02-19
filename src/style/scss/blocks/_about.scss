@@ -1,0 +1,38 @@
+.about{
+  max-width: 655px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 130px 0 0;
+
+  &__title{
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  &__text{
+    line-height: 28px;
+    opacity: 0.7;
+  }
+
+  &__link-holder{
+    padding: 20px 0 0;
+  }
+
+  &__link{
+    color: $red;
+    position: relative;
+    transition: all .3s ease 0s;
+
+    &:after{
+      content: '';
+      width: 133px;
+      opacity: 0.2;
+      position: absolute;
+      border-bottom: solid;
+      border-color: #A25F4B;
+      display: inline-block;
+      top: 22px;
+      left: 0;
+    }
+  }
+}

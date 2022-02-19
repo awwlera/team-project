@@ -1,0 +1,18 @@
+.header {
+    padding: 28px 0;
+
+    .logo {
+        padding: 0 80px 0 20px;
+    }
+
+    &__nav-item {
+        padding: 0 15px;    
+    }
+
+    &__nav-link,
+    &__shopping-link {
+        @include capslock-text;
+        color: $black; 
+    }
+
+}

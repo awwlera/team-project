@@ -1,9 +1,21 @@
 .featured{
-  padding: 100px 0 0;
+  padding: 98px 0 119px;
 
   &__title-holder{
     text-align: center;
-    padding: 35px 0 100px;
+    padding: 0 0 100px;
+  }
+
+  &__column {
+    width: 49%;
+  }
+
+  &__image-holder {
+    margin-bottom: 35px;
+  }
+
+  &__card-text {
+    text-align: center;
   }
 
   &__heading{

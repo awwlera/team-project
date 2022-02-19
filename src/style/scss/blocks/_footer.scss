@@ -1,12 +1,12 @@
 .footer {
-  padding: 107px 0 62px;
+  padding: 0 0 62px;
 
-  .logo {
-    margin-bottom: 22px;
+  .flex-container {
+    align-items: flex-start;
   }
 
-  @include breakpoint("md") {
-    padding: 50px 0 62px;
+  .logo {
+    margin-bottom: 23px;
   }
 
   &__column-holder {
@@ -20,26 +20,20 @@
   }
 
   &__text {
-    margin-bottom: 82px;
+    margin-bottom: 110px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $black-opacity07;
 
     @include breakpoint("md") {
       margin-bottom: 20px;
     }
 
-    & span {
+    &-contact {
+      margin-bottom: 15px;
       font-size: 14px;
       line-height: 22px;
       color: $black-opacity07;
-    }
-
-    &-contact {
-      margin-bottom: 15px;
-
-      & span {
-        font-size: 14px;
-        line-height: 22px;
-        color: $black-opacity07;
-      }
     }
   }
 
@@ -65,24 +59,20 @@
     }
 
     &-title {
-      font-family: inherit;
-      font-weight: 400;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 23px;
+      @include capslock-text;
       color: $black;
+      margin-bottom: 23px;
     }
 
     &-item {
       margin-bottom: 10px;
       color: $black-opacity07;
-      font-size: 13px;
-      line-height: 22px;
-
+    
       & a {
         text-decoration: none;
         color: inherit;
+        font-size: 14px;
+        line-height: 22px;
 
         &:hover {
           color: $black;
@@ -94,7 +84,7 @@
   &__e-mail {
     font-size: 23px;
     line-height: 36px;
-    margin-bottom: 55px;
+    margin-bottom: 80px;
 
     & a {
       color: black;
